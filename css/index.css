@@ -20,15 +20,17 @@
   /* Navbar styles */
   #nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
+    padding:0;
+    height: 40px;
+    background-color: aqua;
   }
   
-  .nav-link {
+  .nav-link{
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
+    color: #3d0150;
+    font-size: 20px;
     margin-right: 20px;
     transition: color 0.3s ease;
   }
