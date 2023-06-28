@@ -9,10 +9,9 @@
   <title>Rohit Portfolio</title>
 </head>
 
-<body style="background-color: rgb(20, 20, 48);  color: rgb(178, 237, 89);">
+<body >
   <!-- Navbar -->
   <nav id="nav-menu">
-
     <a href="#home" class="nav-link home">Home</a>
     <a href="#about" class="nav-link about">About</a>
     <a href="#skills" class="nav-link skills">Skills</a>
@@ -27,39 +26,32 @@
   <section id="home">
     <h1 id="user-detail-name">Rohit Kharwar</h1>
     <p id="user-detail-intro">Full stack web developer</p>
+    <a href="ROHIT KHARWAR.pdf" download="download"><button
+      id="resume-button-2">Resume</button></a>
     <img src="edited.png" alt="Professional Photo" class="home-img"><br>
-    <h2>
-      Downlode My Resume here : <a href="ROHIT KHARWAR.pdf" download="download"><button
-          id="resume-button-2">Resume</button></a>
-    </h2>
 
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about section">
-    <h2>About Me</h2>
-    <p id="user-detail-intro">Hey there! I'm Rohit Kharwar, a full-stack web developer from Gorakhpur, Uttar Pradesh. I
-      recently completed my
-      full-stack
-      web development education at Masai School. Prior to that, I graduated with a B.A degree and Electrition Diploma
-      And worked as an
-      Electrition in Gorakhpur, Utter Pradesh. With a strong foundation in both front-end and back-end development, I
-      bring a
-      well-rounded skill set to the table. I love creating engaging websites that combine sleek designs with robust
-      functionality. Driven by my passion for growth, I constantly seek new challenges and stay up-to-date with the
-      latest industry trends. Collaboration is important to me, and I enjoy working with fellow developers and
-      contributing to open-source projects. In summary, I'm a dedicated and adaptable web developer, eager to make a
-      meaningful impact in the field.</p>
-    <h2>
-      Downlode My Resume here : <a href="ROHIT KHARWAR.pdf" download="download" id="resume-link-2"
-      ><button
-          >Resume</button></a>
-    </h2>
-  </section>
+  <div class="aboutCard">
+    <div>
+      <img src="full stack.png" alt="">
+    </div>
+    <section id="about" class="about section">
+      <h2>About Me</h2>
+      <p id="user-detail-intro">"Hello, I'm Rohit Kharwar, a highly skilled full-stack web developer based in Gorakhpur,
+        Uttar Pradesh. I recently completed a comprehensive full-stack web development program at Masai School. Prior to
+        that, I obtained a B.A. degree and an Electrician Diploma, during which time I worked as an Electrician in
+        Gorakhpur, Uttar Pradesh..</p>
+    </section>
+  </div>
+  
 
   <!-- Skills Section -->
+  <div style="text-align: center;"><h2>Skills</h2></div>
+  
   <section id="skills">
-    <h2>Skills</h2>
+    
     <div class="skills-card">
       <img src="java.jpeg" alt="java" class="skills-card-img">
       <p class="skills-card-name">JAVA</p>
@@ -84,103 +76,93 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section class="project-cards">
     <h2>My Projects</h2>
-    <div class="project-card">
-      <img src="BlueFLy.png" alt="BlueFLy">
-      <h3 class="project-title">Bluefly</h3>
-      <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
-        at discounted price</p>
-      <p class="project-tech-stack">Tech Stack Used</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
-      <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
-    </div>
-    <div class="project-card">
-      <img src="carver.png" alt="BlueFLy">
-      <h3 class="project-title">CARVER Clone</h3>
-      <p class="project-description">This is e-commerce website that offers its customer to purchase the Skateboards </p>
-      <p class="project-tech-stack">Tech Stack Used</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <a href="https://github.com/Rohit27698/carver_Clone" class="project-github-link">GitHub Repository</a>
-      <a href="https://carver-clone.netlify.app/" class="project-deployed-link">Deployed Link</a>
-    </div>
-    <div class="project-card">
-      <img src="BlueFLy.png" alt="BlueFLy">
-      <h3 class="project-title">Bluefly</h3>
-      <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
-        at discounted price</p>
-      <p class="project-tech-stack">Tech Stack Used</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
-      <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
-    </div>
-    <div class="project-card">
-      <img src="carver.png" alt="BlueFLy">
-      <h3 class="project-title">CARVER Clone</h3>
-      <p class="project-description">This is e-commerce website that offers its customer to purchase the Skateboards </p>
-      <p class="project-tech-stack">Tech Stack Used</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <a href="https://github.com/Rohit27698/carver_Clone" class="project-github-link">GitHub Repository</a>
-      <a href="https://carver-clone.netlify.app/" class="project-deployed-link">Deployed Link</a>
-    </div>
+    <section id="projects">
+      
+      <div class="project-card">
+        <img src="BlueFLy.png" alt="BlueFLy">
+        <h3 class="project-title">Bluefly</h3>
+        <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+          at discounted price</p>
+        <p class="project-tech-stack">Tech Stack Used</p>
+        
+          HTML <br>
+          CSS <br>
+          JavaScript <br>
+        <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
+        <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
+      </div>
+      <div class="project-card">
+        <img src="carver.png" alt="BlueFLy">
+        <h3 class="project-title">CARVER Clone</h3>
+        <p class="project-description">This is e-commerce website that offers its customer to purchase the Skateboards
+        </p>
+        <p class="project-tech-stack">Tech Stack Used</p>
+        
+          HTML <br>
+          CSS <br>
+          JavaScript <br>
+        <a href="https://github.com/Rohit27698/carver_Clone" class="project-github-link">GitHub Repository</a>
+        <a href="https://carver-clone.netlify.app/" class="project-deployed-link">Deployed Link</a>
+      </div>
+      <div class="project-card">
+        <img src="BlueFLy.png" alt="BlueFLy">
+        <h3 class="project-title">Bluefly</h3>
+        <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+          at discounted price</p>
+        <p class="project-tech-stack">Tech Stack Used</p>
+        
+          HTML <br>
+          CSS <br>
+          JavaScript <br>
+        <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
+        <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
+      </div>
+      <div class="project-card">
+        <img src="carver.png" alt="BlueFLy">
+        <h3 class="project-title">CARVER Clone</h3>
+        <p class="project-description">This is e-commerce website that offers its customer to purchase the Skateboards
+        </p>
+        <p class="project-tech-stack">Tech Stack Used</p>
+        
+          HTML <br>
+          CSS <br>
+          JavaScript <br>
+        <a href="https://github.com/Rohit27698/carver_Clone" class="project-github-link">GitHub Repository</a>
+        <a href="https://carver-clone.netlify.app/" class="project-deployed-link">Deployed Link</a>
+      </div>
+    </section>
   </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <a id="contact-github" href="https://github.com/Rohit27698">GitHub Profile Link</a>
-    <a id="contact-linkedin" href="https://www.linkedin.com/in/rohit-kumar-034909242/">LinkedIn Profile Link</a>
-    <p id="contact-phone">Phone Number : +916306179040</p>
-    <p id="contact-email">Email Address : rohitkumar27699@gmail.com</p>
-  </section>
-  <!-- Github Calender -->
   
+
+  <!-- Github Calender -->
+
 
 
   <!-- git streak -Status -->
-  <script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
 
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
+  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-<!-- Prepare a container for your calendar. -->
-<section class="react-activity-calendar">
-  <div class="calendar">
-    <!-- Loading stuff -->
-    Loading the data just for you.
-</div>
-</section>
+  <!-- Prepare a container for your calendar. -->
+  <section class="react-activity-calendar">
+    <div class="calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+    </div>
+  </section>
 
 
-<script>
+  <script>
     GitHubCalendar(".calendar", "rohit27698");
 
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "rohit27698", { responsive: true });
 
-</script>
+  </script>
 
 
 
@@ -192,6 +174,14 @@
     src="https://github-readme-stats.vercel.app/api/top-langs?username=rohit27698&show_icons=true&locale=en&layout=compact"
     alt="rohit27698" id="github-top-langs" />
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <a id="contact-github" href="https://github.com/Rohit27698">GitHub Profile Link</a>
+    <a id="contact-linkedin" href="https://www.linkedin.com/in/rohit-kumar-034909242/">LinkedIn Profile Link</a>
+    <p id="contact-phone">Phone Number : +916306179040</p>
+    <p id="contact-email">Email Address : rohitkumar27699@gmail.com</p>
+  </section>
   <script src="/js/index.js"></script>
 </body>
 
