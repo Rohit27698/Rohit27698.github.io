@@ -106,6 +106,9 @@
     padding: 20px;
     margin-bottom: 40px;
   }
+  .project-card img{
+    width: 500px;
+  }
   
   .project-title {
     font-size: 24px;

@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="/css/index.css">
-  <title>My Portfolio</title>
+  <title>Rohit Portfolio</title>
 </head>
+
 <body style="background-color: rgb(20, 20, 48);  color: rgb(178, 237, 89);">
   <!-- Navbar -->
   <nav id="nav-menu">
-    
-      <a href="#home" class="nav-link home">Home</a>
-      <a href="#about" class="nav-link about">About</a>
-      <a href="#skills" class="nav-link skills">Skills</a>
-      <a href="#projects" class="nav-link projects">Projects</a>
-      <a href="#contact" class="nav-link contact">Contact</a>
-      <a href="#" class="nav-link resume">Resume</a>
-    
+
+    <a href="#home" class="nav-link home">Home</a>
+    <a href="#about" class="nav-link about">About</a>
+    <a href="#skills" class="nav-link skills">Skills</a>
+    <a href="#projects" class="nav-link projects">Projects</a>
+    <a href="#contact" class="nav-link contact">Contact</a>
+    <a id="resume-link-2" src="ROHIT KHARWAR.pdf" download="basic_resume" target="_blank">
+      <button class="resume-button" id="resume-button-1">Resume</button></a>
+
   </nav>
 
   <!-- Home Section -->
   <section id="home">
     <h1 id="user-detail-name">Rohit Kharwar</h1>
     <p id="user-detail-intro">Welcome to my portfolio website!</p>
-    <img src="path_to_professional_photo.jpg" alt="Professional Photo" class="home-img">
+    <img src="edited.png" alt="Professional Photo" class="home-img">
   </section>
 
   <!-- About Section -->
   <section id="about" class="about section">
     <h2>About Me</h2>
-    <!-- Add your about me content here -->
+    <p>Hey there! I'm Rohit Kharwar, a full-stack web developer from Gorakhpur, Uttar Pradesh. I recently completed my
+      full-stack
+      web development education at Masai School. Prior to that, I graduated with a B.A degree and Electrition Diploma
+      And worked as an
+      Electrition in Gorakhpur, Utter Pradesh. With a strong foundation in both front-end and back-end development, I
+      bring a
+      well-rounded skill set to the table. I love creating engaging websites that combine sleek designs with robust
+      functionality. Driven by my passion for growth, I constantly seek new challenges and stay up-to-date with the
+      latest industry trends. Collaboration is important to me, and I enjoy working with fellow developers and
+      contributing to open-source projects. In summary, I'm a dedicated and adaptable web developer, eager to make a
+      meaningful impact in the field.</p>
   </section>
 
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-card">
-      <img src="path_to_skill_image_1.jpg" alt="Skill Image" class="skills-card-img">
-      <p class="skills-card-name">Skill Name 1</p>
+      <img src="java.jpeg" alt="java" class="skills-card-img">
+      <p class="skills-card-name">JAVA</p>
     </div>
     <div class="skills-card">
-      <img src="path_to_skill_image_2.jpg" alt="Skill Image" class="skills-card-img">
-      <p class="skills-card-name">Skill Name 2</p>
+      <img src="js.png" alt="JavaScript" class="skills-card-img">
+      <p class="skills-card-name">JavaScript</p>
     </div>
-    <!-- Add more skills cards as needed -->
+    <div class="skills-card">
+      <img src="Html.jpeg" alt="html" class="skills-card-img">
+      <p class="skills-card-name">HTML</p>
+    </div>
+    <div class="skills-card">
+      <img src="cssImg.png" alt="css" class="skills-card-img">
+      <p class="skills-card-name">CSS</p>
+    </div>
+    <div class="skills-card">
+      <img src="react.jpeg" alt="react" class="skills-card-img">
+      <p class="skills-card-name">React</p>
+    </div>
+
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>My Projects</h2>
     <div class="project-card">
-      <img src="path_to_project_image_1.jpg" alt="Project Image">
-      <h3 class="project-title">Project Title 1</h3>
-      <p class="project-description">Project Description</p>
+      <img src="BlueFLy.png" alt="BlueFLy">
+      <h3 class="project-title">Bluefly</h3>
+      <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+        at discounted price</p>
       <p class="project-tech-stack">Tech Stack Used</p>
-      <a href="#" class="project-github-link">GitHub Repository</a>
-      <a href="#" class="project-deployed-link">Deployed Link</a>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
+      <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
     </div>
     <div class="project-card">
       <img src="path_to_project_image_2.jpg" alt="Project Image">
       <h3 class="project-title">Project Title 2</h3>
       <p class="project-description">Project Description</p>
       <p class="project-tech-stack">Tech Stack Used</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
       <a href="#" class="project-github-link">GitHub Repository</a>
       <a href="#" class="project-deployed-link">Deployed Link</a>
     </div>
-    <!-- Add more project cards as needed -->
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p id="contact-github">GitHub Profile Link</p>
-    <p id="contact-linkedin">LinkedIn Profile Link</p>
-    <p id="contact-phone">Phone Number</p>
-    <p id="contact-email">Email Address</p>
+    <a id="contact-github" href="https://github.com/Rohit27698">GitHub Profile Link</a>
+    <a id="contact-linkedin" href="https://www.linkedin.com/in/rohit-kumar-034909242/">LinkedIn Profile Link</a>
+    <p id="contact-phone">Phone Number : +916306179040</p>
+    <p id="contact-email">Email Address : rohitkumar27699@gmail.com </p>
   </section>
 
   <!-- JavaScript -->
   <script src="/js/index.js"></script>
 </body>
+
 </html>
