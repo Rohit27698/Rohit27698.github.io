@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
   <title>Rohit Portfolio</title>
 </head>
 
@@ -17,7 +19,8 @@
     <a href="#skills" class="nav-link skills">Skills</a>
     <a href="#projects" class="nav-link projects">Projects</a>
     <a href="#contact" class="nav-link contact">Contact</a>
-    <a class="nav-link resume" href="ROHIT KHARWAR.pdf" download="download"><button id="resume-button-1">Resume</button></a>
+    <a class="nav-link resume" href="ROHIT KHARWAR.pdf" download="download"><button
+        id="resume-button-1">Resume</button></a>
 
   </nav>
 
@@ -25,14 +28,19 @@
   <section id="home">
     <h1 id="user-detail-name">Rohit Kharwar</h1>
     <p id="user-detail-intro">Full stack web developer</p>
-    <img src="edited.png" alt="Professional Photo" class="home-img">
-    
+    <img src="edited.png" alt="Professional Photo" class="home-img"><br>
+    <h2>
+      Downlode My Resume here : <a href="ROHIT KHARWAR.pdf" download="download"><button
+          id="resume-button-2">Resume</button></a>
+    </h2>
+
   </section>
 
   <!-- About Section -->
   <section id="about" class="about section">
     <h2>About Me</h2>
-    <p id="user-detail-intro">Hey there! I'm Rohit Kharwar, a full-stack web developer from Gorakhpur, Uttar Pradesh. I recently completed my
+    <p id="user-detail-intro">Hey there! I'm Rohit Kharwar, a full-stack web developer from Gorakhpur, Uttar Pradesh. I
+      recently completed my
       full-stack
       web development education at Masai School. Prior to that, I graduated with a B.A degree and Electrition Diploma
       And worked as an
@@ -43,9 +51,10 @@
       latest industry trends. Collaboration is important to me, and I enjoy working with fellow developers and
       contributing to open-source projects. In summary, I'm a dedicated and adaptable web developer, eager to make a
       meaningful impact in the field.</p>
-      <h2>
-        Downlode My Resume here : <a href="ROHIT KHARWAR.pdf" download="download"><button id="resume-button-2"></button>Resume</a>
-      </h2>
+    <h2>
+      Downlode My Resume here : <a href="ROHIT KHARWAR.pdf" download="download"><button
+          id="resume-button-2">Resume</button></a>
+    </h2>
   </section>
 
   <!-- Skills Section -->
@@ -92,17 +101,46 @@
       <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
     </div>
     <div class="project-card">
-      <img src="#" alt="Project Image">
-      <h3 class="project-title">Project Title 2</h3>
-      <p class="project-description">Project Description</p>
+      <img src="BlueFLy.png" alt="BlueFLy">
+      <h3 class="project-title">Bluefly</h3>
+      <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+        at discounted price</p>
       <p class="project-tech-stack">Tech Stack Used</p>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
       </ul>
-      <a href="#" class="project-github-link">GitHub Repository</a>
-      <a href="#" class="project-deployed-link">Deployed Link</a>
+      <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
+      <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
+    </div>
+    <div class="project-card">
+      <img src="BlueFLy.png" alt="BlueFLy">
+      <h3 class="project-title">Bluefly</h3>
+      <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+        at discounted price</p>
+      <p class="project-tech-stack">Tech Stack Used</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
+      <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
+    </div>
+    <div class="project-card">
+      <img src="BlueFLy.png" alt="BlueFLy">
+      <h3 class="project-title">Bluefly</h3>
+      <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+        at discounted price</p>
+      <p class="project-tech-stack">Tech Stack Used</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
+      <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
     </div>
   </section>
 
@@ -114,8 +152,28 @@
     <p id="contact-phone">Phone Number : +916306179040</p>
     <p id="contact-email">Email Address : rohitkumar27699@gmail.com</p>
   </section>
+  <!-- Github Calender -->
+  <section class="react-activity-calendar">
+    <h1>My GitHub Calender</h1>
+    <div class="calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+    </div>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+  </section>
 
-  <!-- JavaScript -->
+
+  <!-- git streak -Status -->
+
+  <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=rohit27698"
+    alt="rohit27698" />
+  <img id="github-top-langs"
+    src="https://github-readme-stats.vercel.app/api?username=rohit27698&show_icons=true&locale=en" alt="rohit27698" />
+  <img id="github-stats-card"
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=rohit27698&show_icons=true&locale=en&layout=compact"
+    alt="rohit27698" />
+
   <script src="/js/index.js"></script>
 </body>
 
