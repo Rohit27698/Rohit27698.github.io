@@ -65,10 +65,18 @@
         requirements and exceed expectations.
 
         If you have any inquiries or would like to collaborate, please feel free to reach out. Thank you!</p>
-        <a href="ROHIT KHARWAR2.pdf" download="resume 2"><button
-          id="resume-button-2">Resume</button></a>
+        <button id="resume-button-2" onclick="openResume2()">Resume</button>
     </section>
   </div>
+  <Script>
+    function openResume2() {
+            const link = document.createElement('a');
+            link.href = 'ROHIT KHARWAR2.pdf';
+            link.download = 'ROHIT KHARWAR2.pdf';
+            link.click();
+        }
+  </Script>
+  
 
 
   <!-- Skills Section -->
