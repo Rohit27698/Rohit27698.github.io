@@ -9,8 +9,8 @@
   <title>Rohit Portfolio</title>
 </head>
 
-<body >
-  
+<body>
+
   <!-- Navbar -->
   <nav id="nav-menu">
     <a href="#home" class="nav-link home">Home</a>
@@ -27,8 +27,19 @@
   <section id="home">
     <h1 id="user-detail-name">Rohit Kharwar</h1>
     <p>Full stack web developer</p>
-    <a href="ROHIT KHARWAR.pdf" download="resume 2"><button
-      id="resume-button-2">Resume</button></a>
+    <button id="resume-button-2">Resume</button>
+
+    <script>
+      const resumeButton = document.getElementById("resume-button-2");
+      resumeButton.addEventListener("click", () => {
+        const fileUrl = "ROHIT KHARWAR.pdf";
+        const a = document.createElement("a");
+        a.href = fileUrl;
+        a.download = "resume 2";
+        a.click();
+      });
+    </script>
+
     <img src="edited.png" alt="Professional Photo" class="home-img"><br>
 
   </section>
@@ -40,22 +51,31 @@
     </div>
     <section id="about" class="about section">
       <h2>About Me</h2>
-      <p id="user-detail-intro">Hello, I'm Rohit Kharwar, a highly skilled full-stack web developer based in Gorakhpur, Uttar Pradesh. I recently completed a comprehensive full-stack web development program at Masai School. Prior to that, I obtained a B.A. degree and an Electrician Diploma. During my time as an Electrician in Gorakhpur, Uttar Pradesh, I developed a strong foundation in problem-solving and attention to detail.
+      <p id="user-detail-intro">Hello, I'm Rohit Kharwar, a highly skilled full-stack web developer based in Gorakhpur,
+        Uttar Pradesh. I recently completed a comprehensive full-stack web development program at Masai School. Prior to
+        that, I obtained a B.A. degree and an Electrician Diploma. During my time as an Electrician in Gorakhpur, Uttar
+        Pradesh, I developed a strong foundation in problem-solving and attention to detail.
 
-        I have expertise in various programming languages, including Java and JavaScript, which I utilize to create dynamic and interactive web applications. Additionally, I am proficient in HTML, CSS, and React, enabling me to design and develop modern user interfaces with a focus on responsiveness and user experience.
-        
-        With my passion for web development and dedication to continuous learning, I strive to stay updated with the latest industry trends and technologies. I am committed to delivering high-quality solutions that meet client requirements and exceed expectations.
-        
+        I have expertise in various programming languages, including Java and JavaScript, which I utilize to create
+        dynamic and interactive web applications. Additionally, I am proficient in HTML, CSS, and React, enabling me to
+        design and develop modern user interfaces with a focus on responsiveness and user experience.
+
+        With my passion for web development and dedication to continuous learning, I strive to stay updated with the
+        latest industry trends and technologies. I am committed to delivering high-quality solutions that meet client
+        requirements and exceed expectations.
+
         If you have any inquiries or would like to collaborate, please feel free to reach out. Thank you!</p>
     </section>
   </div>
-  
+
 
   <!-- Skills Section -->
-  <div style="text-align: center;"><h2>Skills</h2></div>
-  
+  <div style="text-align: center;">
+    <h2>Skills</h2>
+  </div>
+
   <section id="skills">
-    
+
     <div class="skills-card">
       <img src="java.jpeg" alt="java" class="skills-card-img">
       <p class="skills-card-name">JAVA</p>
@@ -83,17 +103,18 @@
   <section class="project-cards">
     <h2>My Projects</h2>
     <section id="projects">
-      
+
       <div class="project-card">
         <img src="BlueFLy.png" alt="BlueFLy">
         <h3 class="project-title">Bluefly</h3>
-        <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+        <p class="project-description">This is e-commerce website that offers its customer to purchase the branded
+          product
           at discounted price</p>
         <p class="project-tech-stack">Tech Stack Used</p>
-        
-          HTML <br>
-          CSS <br>
-          JavaScript <br>
+
+        HTML <br>
+        CSS <br>
+        JavaScript <br>
         <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
         <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
       </div>
@@ -103,23 +124,24 @@
         <p class="project-description">This is e-commerce website that offers its customer to purchase the Skateboards
         </p>
         <p class="project-tech-stack">Tech Stack Used</p>
-        
-          HTML <br>
-          CSS <br>
-          JavaScript <br>
+
+        HTML <br>
+        CSS <br>
+        JavaScript <br>
         <a href="https://github.com/Rohit27698/carver_Clone" class="project-github-link">GitHub Repository</a>
         <a href="https://carver-clone.netlify.app/" class="project-deployed-link">Deployed Link</a>
       </div>
       <div class="project-card">
         <img src="BlueFLy.png" alt="BlueFLy">
         <h3 class="project-title">Bluefly</h3>
-        <p class="project-description">This is e-commerce website that offers its customer to purchase the branded product
+        <p class="project-description">This is e-commerce website that offers its customer to purchase the branded
+          product
           at discounted price</p>
         <p class="project-tech-stack">Tech Stack Used</p>
-        
-          HTML <br>
-          CSS <br>
-          JavaScript <br>
+
+        HTML <br>
+        CSS <br>
+        JavaScript <br>
         <a href="https://github.com/Rohit27698/Team_bluefly" class="project-github-link">GitHub Repository</a>
         <a href="https://blueflyclone.netlify.app/" class="project-deployed-link">Deployed Link</a>
       </div>
@@ -129,16 +151,16 @@
         <p class="project-description">This is e-commerce website that offers its customer to purchase the Skateboards
         </p>
         <p class="project-tech-stack">Tech Stack Used</p>
-        
-          HTML <br>
-          CSS <br>
-          JavaScript <br>
+
+        HTML <br>
+        CSS <br>
+        JavaScript <br>
         <a href="https://github.com/Rohit27698/carver_Clone" class="project-github-link">GitHub Repository</a>
         <a href="https://carver-clone.netlify.app/" class="project-deployed-link">Deployed Link</a>
       </div>
     </section>
   </section>
-  
+
 
   <!-- Github Calender -->
 
