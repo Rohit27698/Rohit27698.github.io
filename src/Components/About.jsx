@@ -11,6 +11,8 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import day from "../images/day.gif"
+import night from "../images/giphy.gif"
 
 const About = (props) => {
   const { checkTheme,aboutScroll } = props;
@@ -39,7 +41,8 @@ const About = (props) => {
   }, [checkTheme]);
 
   return (
-    <div ref={aboutScroll} className="mainDiv" style={theme}>
+    <div ref={aboutScroll}  style={theme}
+    id="about" class="about section">
       <Heading fontSize={40} color={"#fe9119"}>
         About <span style={theme}>Me</span>
       </Heading>
@@ -53,7 +56,7 @@ const About = (props) => {
           data-aos="zoom-in"
           m={"auto"}
           w={["83%", "83%", "83%", "80%"]}
-          src="https://www.slnsoftwares.com/images/gif/working_man.gif"
+          src={!checkTheme? day:night}
           alt="Projects"
         />
 
@@ -70,10 +73,11 @@ const About = (props) => {
             mt={"5%"}
             textAlign={"left"}
             className="AboutList"
+            id="user-detail-intro"
           >
             <ListItem mt={14}>
               <ListIcon as={CheckCircleIcon} color="#fe9119" />
-              Hello, My name is <b>Abhishek Pratap Solanki </b> and I enjoy
+              Hello, My name is <b>Rohit Kharwar</b> and I enjoy
               creating thing that live on the internet.
             </ListItem>
             <ListItem mt={4}>
@@ -89,7 +93,7 @@ const About = (props) => {
               with good problem solving skills.
             </ListItem>
             <ListItem mt={4}>
-              <ListIcon as={CheckCircleIcon} color="#fe9119" />I built 4 major
+              <ListIcon as={CheckCircleIcon} color="#fe9119" />I built many
               projects. Learned a great deal about teamwork, leadership, and
               communication. After months of rigorous training, here I am looking
               for an opportunity as a full Stack web Developer.

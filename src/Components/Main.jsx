@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import  Slide from "./Slide";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Button } from "react-scroll";
 
 const Main = () => {
   const [checkTheme, setCheckTheme] = useState(false);
@@ -78,7 +79,7 @@ const Main = () => {
   }, [checkTheme]);
 
   return (
-    <div>
+    <div id="nav-menu">
       {/*======================== MAin div ======================= */}
 
       <div style={{ position: "sticky", top: 0, left: 0, zIndex: 1000 }}>
@@ -127,53 +128,63 @@ const Main = () => {
             // border="1px solid red"
             float={"right"}
           >
-            <Text
+            <a
               display={["none", "none", "block", "block"]}
-              className="navH"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+              // onClick={() =>
+              // //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
                 
-              }
+              // // }
+              href="#home"
+              id="nave"
+              class="nav-link home"
             >
               HOME
-            </Text>
+            </a>
             <Text
               display={["none", "none", "block", "block"]}
-              className="navH"
               onClick={executeAbout}
+              id="nave"
+              class="nav-link about"
             >
               ABOUT
             </Text>
             <Text
               display={["none", "none", "block", "block"]}
               w={105}
-              className="navH"
               onClick={executeProject}
+              id="nave"
+              class="nav-link projects"
+
             >
               PROJECT
             </Text>
             <Text
               display={["none", "none", "block", "block"]}
               w={105}
-              className="navH"
               onClick={executeSkill}
+              id="nave"
+              class="nav-link skills"
             >
               SKILLS
             </Text>
             <Text
               display={["none", "none", "block", "block"]}
-              className="navH"
               onClick={executeContact}
+              id="nave"
+              class="nav-link contact"
             >
               CONTACT
             </Text>
             <a
-              href="https://drive.google.com/file/d/11cBo69VOoq3wcwtPFDMv0t6R7MeHgrB8/view?usp=sharing"
+            className="nav-link resume"
+
+              href="https://drive.google.com/file/d/1jOuzpWdZ-N0UF9CWiThh3UkIaVogiHBR/view?usp=sharing"
               target="_blank"
             >
               <Text
                 display={["none", "none", "block", "block"]}
-                className="navH"
+                id="nave"
+                className="nav-link resume"
               >
                 RESUME
               </Text>

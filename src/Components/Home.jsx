@@ -37,7 +37,7 @@ const Home = (props) => {
   }, [checkTheme]);
 
   return (
-    <div>
+    <div id="home">
       {/* ---------------- Main Div ------------------ */}
 
       <SimpleGrid
@@ -52,7 +52,6 @@ const Home = (props) => {
         pb={"105px"}
         className="HomeMain"
         style={theme}
-        id="home"
       >
         {/*======================== Left side Div ======================= */}
 
@@ -78,7 +77,7 @@ const Home = (props) => {
                 m={"auto"}
                 ml={"0"}
                 src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif"
-                alt="Abhi"
+                alt="Rohit"
               />
             </span>
             , My name is
@@ -90,8 +89,9 @@ const Home = (props) => {
             mt={[0, 0, 0, 2]}
             ml={[-10, 13, 0, 50]}
             fontSize={[30, 30, 32, 50]}
+            id="user-detail-name"
           >
-            Abhishek Pratap Solanki
+            Rohit Kharwar
           </Heading>
 
           {/*======================== Animation Heading ======================= */}
@@ -120,7 +120,7 @@ const Home = (props) => {
             pb={["80px", "80px", "80px", "80px"]}
           >
             <a
-              href="http://www.linkedin.com/in/abhishekpratapsolanki"
+              href="http://www.linkedin.com/in/rohit-kharwar"
               target="_blank"
             >
               <Button
@@ -141,7 +141,7 @@ const Home = (props) => {
                 <AiFillLinkedin />
               </Button>
             </a>
-            <a href="https://github.com/Abhishek07788" target="_blank">
+            <a href="https://github.com/Rohit27698" target="_blank">
               <Button
                 color="black"
                 border={"1px"}
@@ -160,7 +160,7 @@ const Home = (props) => {
                 <BsGithub />
               </Button>
             </a>
-            <a href="mailto:abhisheksolanki1020@gmail.com">
+            <a href="mailto:rohitkumar27699@gmail.com">
               <Button
                 color="black"
                 border={"1px"}
@@ -179,7 +179,7 @@ const Home = (props) => {
                 <MdEmail />
               </Button>
             </a>
-            <a href="tel:+919758207006">
+            <a href="tel:+916306179040">
               <Button
                 color="black"
                 border={"1px"}
@@ -205,7 +205,7 @@ const Home = (props) => {
           <SimpleGrid display={"flex"}  mt={["-16","-16","-65","-65"]}>
             {/*======================== View Resume ======================= */}
 
-            <a href={resume}>
+            <a href='https://drive.google.com/file/d/1jOuzpWdZ-N0UF9CWiThh3UkIaVogiHBR/view?usp=sharing'>
               <Button
                 border="2px solid #ffb153"
                 ml={[-10, 13, 0, 50]}
@@ -228,7 +228,7 @@ const Home = (props) => {
 
             {/*======================== Download Resume ======================= */}
 
-            <a href={resume} download={"Abhishek Pratap Solanki Resume"}>
+            <a href="https://drive.google.com/file/d/1jOuzpWdZ-N0UF9CWiThh3UkIaVogiHBR/view?usp=sharing" download={"Rohit Kharwar Resume"}>
               <Button
                 onClick={() =>
                   Toast({
@@ -273,6 +273,7 @@ const Home = (props) => {
             }}
             src={myimage}
             alt="Avatar"
+            className="home-img"
           />
         </Box>
       </SimpleGrid>

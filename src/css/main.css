@@ -3,10 +3,10 @@
     font-family: Ubuntu, sans-serif;   
  }
    
-.navH{
-    width: 80%;
-}
-.navH:hover{
+/* #nave{
+    width: 300%;
+} */
+#nave:hover{
     background-color: #fe9119;
     color: white;
     border-radius: 10px;
@@ -96,6 +96,9 @@
 
 
   .mainDiv{
+    padding-top: 70px;
+  }
+  #about{
     padding-top: 70px;
   }
   .mainDivProject{

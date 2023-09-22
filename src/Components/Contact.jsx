@@ -18,7 +18,7 @@ import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import emailimg from "../images/pxfuel.jpg";
+import emailimg from "../images/emailimg.png";
 // import emailjs from "emailjs-com";
 
 const Contact = (props) => {
@@ -33,27 +33,10 @@ const Contact = (props) => {
   //------------------------ Email Send --------------
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm(
-    //   "service_ml5brp5",
-    //   "template_xe5tl5l",
-    //   e.target,
-    //   "_-SYa4AW4mbtbVQiF"
-    // ).then(res=>{
-    //   console.log(res)
-    // }).catch((err)=>{
-    //   console.log(err)
-    // })
-    // toast({
-    //   title: "Thanks for contacting me.🙂",
-    //   description: "I will reply you soon.",
-    //   status: "success",
-    //   duration: 9000,
-    //   isClosable: true,
-    // });
     toast({
-      title: "This service has been stop from backend!",
-      description: "Because of some students spam, It will be stated soon.🙂",
-      status: "error",
+      title: "Thanks for contacting me.🙂",
+      description: "I will reply you soon.",
+      status: "success",
       duration: 9000,
       isClosable: true,
     });
@@ -109,7 +92,8 @@ const Contact = (props) => {
   }, [checkTheme]);
 
   return (
-    <div ref={contactScroll} className="mainDiv" style={theme}>
+    <div ref={contactScroll} className="mainDiv" style={theme}
+    id="contact">
       <Heading fontSize={40} color="#fe9119">
         Contact <span style={theme}>Me</span>
       </Heading>
@@ -131,7 +115,8 @@ const Contact = (props) => {
 
           <Box display={"flex"} m="auto" gap={[2, 2, 7, 8]} mt="100px">
             <a
-              href="http://www.linkedin.com/in/abhishekpratapsolanki"
+            id="contact-linkedin"
+              href="https://www.linkedin.com/in/rohit-kharwar"
               target="_blank"
             >
               <Button
@@ -156,7 +141,7 @@ const Contact = (props) => {
                 Linkdin
               </Button>
             </a>
-            <a href="https://github.com/Abhishek07788" target="_blank">
+            <a href="https://github.com/Rohit27698" id="contact-github"target="_blank">
               <Button
                 border="2px solid #3f3d55"
                 fontSize={[14, 14, 14, 17]}
@@ -177,7 +162,7 @@ const Contact = (props) => {
                 Github
               </Button>
             </a>
-            <a href="mailto:abhisheksolanki1020@gmail.com">
+            <a href="mailto:rohitkumar27699@gmail.com" id="contact-email">
               <Button
                 border="2px solid #f04244"
                 fontSize={[14, 14, 14, 17]}
@@ -198,7 +183,7 @@ const Contact = (props) => {
                 Email
               </Button>
             </a>
-            <a href="tel:+919758207006">
+            <a href="tel:+916306179040" id="contact-phone">
               <Button
                 border="2px solid #4db946"
                 fontSize={[14, 14, 14, 17]}
@@ -335,7 +320,7 @@ const Contact = (props) => {
         style={show}
       >
         <a
-          href="http://www.linkedin.com/in/abhishekpratapsolanki"
+          href="http://www.linkedin.com/in/rohit-kharwar"
           target="_blank"
         >
           <Button
@@ -357,7 +342,7 @@ const Contact = (props) => {
             <AiFillLinkedin />
           </Button>
         </a>
-        <a href="https://github.com/Abhishek07788" target="_blank">
+        <a href="https://github.com/Rohit27698" target="_blank">
           <Button
             border="2px solid #3f3d55"
             color="#ffff"
@@ -377,7 +362,7 @@ const Contact = (props) => {
             <AiFillGithub />
           </Button>
         </a>
-        <a href="mailto:abhisheksolanki1020@gmail.com">
+        <a href="mailto:rohitkumar27699@gmail.com">
           <Button
             border="2px solid #f04244"
             color="#ffff"
@@ -397,7 +382,7 @@ const Contact = (props) => {
             <AiOutlineMail />
           </Button>
         </a>
-        <a href="tel:+919758207006">
+        <a href="tel:+916306179040">
           <Button
             border="2px solid #4db946"
             borderRadius={"50%"}
@@ -475,7 +460,7 @@ const Contact = (props) => {
       </Button>
 
       <Text pb={10} fontSize={14} w={"90%"} m="auto" textAlign={"center"}>
-        Designed and build by Abhishek Pratap Solanki, 2022 All right reserved.
+        Designed and build by Rohit Kharwar.
       </Text>
     </div>
   );

@@ -9,21 +9,21 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import html from "../images/pxfuel.jpg"
-import css from "../images/pxfuel.jpg"
-import javascript from "../images/pxfuel.jpg"
-import react from "../images/pxfuel.jpg"
-import chakraui from "../images/pxfuel.jpg"
-import mongodb from "../images/pxfuel.jpg"
-import mongoose from "../images/pxfuel.jpg"
-import express from"../images/pxfuel.jpg"
-import nodejs from "../images/pxfuel.jpg"
-import git from "../images/pxfuel.jpg"
+import html from "../images/html.svg"
+import css from "../images/css.svg"
+import javascript from "../images/javascript.svg"
+import react from "../images/react.svg"
+import chakraui from "../images/chakraui.png"
+import mongodb from "../images/mongodb.svg"
+import mongoose from "../images/mongoose.png"
+import express from "../images/express.svg"
+import nodejs from "../images/nodejs.svg"
+import git from "../images/git.svg"
 // import materialui from "../Image/materialui.svg"
-import npm from "../images/pxfuel.jpg"
-import postman from "../images/pxfuel.jpg"
-import redux from "../images/pxfuel.jpg"
-import bootstrap from "../images/pxfuel.jpg"
+import npm from "../images/npm.svg"
+import postman from "../images/postman.png"
+import redux from "../images/redux.svg"
+import bootstrap from "../images/bootstrap.svg"
 
 
 
@@ -32,19 +32,19 @@ import bootstrap from "../images/pxfuel.jpg"
 
 
 const Skills = (props) => {
-  
-  const { checkTheme,skillScroll } = props;
+
+  const { checkTheme, skillScroll } = props;
   const [theme, setTheme] = useState({});
   const [theme1, setTheme1] = useState({});
-  
+
   // =================== Animation =====================>
-  
+
   useEffect(() => {
     AOS.init({ offset: 300, duration: 1000 });
   }, []);
 
 
-// =================== Theme 1 =====================>
+  // =================== Theme 1 =====================>
 
   useEffect(() => {
     if (checkTheme) {
@@ -78,86 +78,118 @@ const Skills = (props) => {
   }, [checkTheme]);
 
   return (
-    <div ref={skillScroll} className="mainDiv" style={theme}>
-      <Heading fontSize={[35,35,40,40]}>
+    <div ref={skillScroll} className="mainDiv" style={theme} id="skills">
+      <Heading fontSize={[35, 35, 40, 40]}>
         My <span style={{ color: "#fe9119" }}>Technical </span>Skills
       </Heading>
 
 
 
-    {/* =================== All Skills ================= */}
+      {/* =================== All Skills ================= */}
 
       <SimpleGrid
         w={"80%"}
         m="auto"
         mt={"80px"}
-        columns={[2, 2,3, 7]}
+        columns={[2, 2, 3, 7]}
         spacing="40px"
-        fontSize={["none","none","18","none"]}
+        fontSize={["none", "none", "18", "none"]}
         className="SkillsDiv"
         pb={"100px"}
       >
-        
-        <Box
-        data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={html} alt="html"/>
-        <Text>HTML</Text>
+
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={html} alt="html" />
+          <Text className="skills-card-name">HTML</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={css} alt="css"/>
-        <Text>CSS</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={css} alt="css" />
+          <Text className="skills-card-name">CSS</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={javascript} alt="javascript"/>
-        <Text>JavaScript</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={javascript} alt="javascript" />
+          <Text className="skills-card-name">JavaScript</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={react} alt="react"/>
-        <Text>React</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={react} alt="react" />
+          <Text className="skills-card-name">React</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={chakraui} alt="chakraui"/>
-        <Text>Chakra UI</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={chakraui} alt="chakraui" />
+          <Text className="skills-card-name">Chakra UI</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={mongodb} alt="mongodb"/>
-        <Text>Mongo DB</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={mongodb} alt="mongodb" />
+          <Text className="skills-card-name">Mongo DB</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={mongoose} alt="mongoose"/>
-        <Text>Mongoose</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={mongoose} alt="mongoose" />
+          <Text className="skills-card-name">Mongoose</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={express} alt="express"/>
-        <Text>Express</Text>
+        <Box className="skills-card" data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={express} alt="express" />
+          <Text className="skills-card-name">Express</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={nodejs} alt="nodejs"/>
-        <Text>Node JS</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={nodejs} alt="nodejs" />
+          <Text className="skills-card-name">Node JS</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={git} alt="git"/>
-        <Text>Git</Text>
+        <Box className="skills-card" data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+
+          <Image
+            className="skills-card-img"
+            w={"110px"} m="auto" mb={2} src={git} alt="git" />
+          <Text className="skills-card-name">Git</Text>
         </Box>
         {/* <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
         <Image w={"110px"} m="auto" mb={2} src={materialui} alt="materialui"/>
         <Text>Material UI</Text>
         </Box> */}
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={npm} alt="npm"/>
-        <Text>NPM</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image w={"110px"} m="auto" mb={2} src={npm} alt="npm" />
+          <Text>NPM</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={postman} alt="postman"/>
-        <Text>Post Man</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image w={"110px"} m="auto" mb={2} src={postman} alt="postman" />
+          <Text>Post Man</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={redux} alt="redux"/>
-        <Text>Redux</Text>
+        <Box className="skills-card" data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+
+          <Image w={"110px"} m="auto" mb={2} src={redux} alt="redux" />
+          <Text>Redux</Text>
         </Box>
-        <Box  data-aos="zoom-in" borderRadius={10} p={4} w={["70%","70%","100%"]} m="auto" display="grid" style={theme1}>
-        <Image w={"110px"} m="auto" mb={2} src={bootstrap} alt="bootstrap"/>
-        <Text>Bootstrap</Text>
+        <Box className="skills-card"
+          data-aos="zoom-in" borderRadius={10} p={4} w={["70%", "70%", "100%"]} m="auto" display="grid" style={theme1}>
+          <Image w={"110px"} m="auto" mb={2} src={bootstrap} alt="bootstrap" />
+          <Text>Bootstrap</Text>
         </Box>
       </SimpleGrid>
     </div>

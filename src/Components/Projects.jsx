@@ -54,7 +54,7 @@ const Projects = (props) => {
   }, [checkTheme]);
 
   return (
-    <div ref={projectScroll} className="mainDivProject" style={theme}>
+    <div ref={projectScroll} className="mainDivProject" style={theme} id="projects">
       <Heading fontSize={40}>
         My <span style={{ color: "#fe9119" }}>Projects</span>
       </Heading>
@@ -70,9 +70,11 @@ const Projects = (props) => {
         textAlign={"center"}
         pb={"40px"}
       >
-        {/* =============== Lyst - Clone Projects ================ */}
+        {/* =============== Bluefly - Clone Projects ================ */}
 
-        <Box data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
+        <Box
+          className="project-card"
+          data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
           <Image
             border={"2px solid #fe9119"}
             w={"100%"}
@@ -80,8 +82,8 @@ const Projects = (props) => {
             src={lystImg}
             alt="lyst.com"
           />
-          <Heading mt={4} fontSize={"22px"}>
-            LYST - Clone{" "}
+          <Heading mt={4} fontSize={"22px"} className="project-title">
+            Bluefly - Clone{" "}
           </Heading>
           <Text
             fontSize={["14px", "14px", "19px", "17px"]}
@@ -89,27 +91,29 @@ const Projects = (props) => {
             w="99%"
             mt={2}
             textAlign={"left"}
+            className="project-description"
           >
-            This website is a clone of "lyst.com". Lyst is a global fashion
-            search platform, I have cloned it individually, And this project is
-            fully responsive.
+            This website is a clone of "Bluefly.com". This is e-commerce website that offers its customer to purchase the branded
+            product
+            at discounted price
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["14px", "14px", "19px", "17px"]}
           >
-            <b> Individual Project </b>| <b>Duration: </b> 04 Days
+             <b> Group Project: </b> 3 Collaborators | <b>Duration: </b> 05 Days
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["13px", "13px", "16px", "15px"]}
+            className="project-tech-stack"
           >
             <span style={{ color: "#fe9119", fontSize: "16px" }}>
               TECH STACK:{" "}
             </span>
-            REACT | CSS | JAVASCRIPT | JSON SERVER | CHAKRA UI
+            HTML | CSS | JAVASCRIPT 
           </Text>
           <Box
             w={"80%"}
@@ -122,12 +126,13 @@ const Projects = (props) => {
             className="ProjectIcon"
           >
             <a
-              href="https://github.com/Abhishek07788/impartial-honey-6054/tree/main/lyst.com"
+            className="project-github-link"
+              href="https://github.com/Rohit27698/Team_bluefly"
               target="_blank"
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://cute-souffle-8b7dcd.netlify.app/" target="_blank">
+            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
@@ -135,16 +140,18 @@ const Projects = (props) => {
 
         {/* =============== My Portfolio - Clone Projects ================ */}
 
-        <Box data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
+        <Box
+          className="project-card"
+          data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
           <Image
             border={"2px solid #fe9119"}
             w={"100%"}
             borderRadius={10}
-            src={portfolio}
-            alt="portfolio"
+            src={lystImg}
+            alt="lyst.com"
           />
-          <Heading mt={4} fontSize={"22px"}>
-            My Portfolio{" "}
+          <Heading mt={4} fontSize={"22px"} className="project-title">
+            Bluefly - Clone{" "}
           </Heading>
           <Text
             fontSize={["14px", "14px", "19px", "17px"]}
@@ -152,27 +159,29 @@ const Projects = (props) => {
             w="99%"
             mt={2}
             textAlign={"left"}
+            className="project-description"
           >
-            This is my fully responsive portfolio which I recently made using
-            React & Chakra UI, This website has Dark mode, Scrolling
-            functionality etc.
+            This website is a clone of "Bluefly.com". This is e-commerce website that offers its customer to purchase the branded
+            product
+            at discounted price
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["14px", "14px", "19px", "17px"]}
           >
-            <b> Individual Project </b>| <b>Duration: </b> 04 Days
+             <b> Group Project: </b> 3 Collaborators | <b>Duration: </b> 05 Days
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["13px", "13px", "16px", "15px"]}
+            className="project-tech-stack"
           >
             <span style={{ color: "#fe9119", fontSize: "16px" }}>
               TECH STACK:{" "}
             </span>
-            REACT | CSS | JAVASCRIPT | CHAKRA UI
+            HTML | CSS | JAVASCRIPT 
           </Text>
           <Box
             w={"80%"}
@@ -185,12 +194,13 @@ const Projects = (props) => {
             className="ProjectIcon"
           >
             <a
-              href="https://github.com/Abhishek07788/Abhishek07788.github.io"
+            className="project-github-link"
+              href="https://github.com/Rohit27698/Team_bluefly"
               target="_blank"
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://abhishek07788.github.io/" target="_blank">
+            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
@@ -198,16 +208,18 @@ const Projects = (props) => {
 
         {/* =============== Animoto - Clone Projects ================ */}
 
-        <Box data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
+        <Box
+          className="project-card"
+          data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
           <Image
             border={"2px solid #fe9119"}
             w={"100%"}
             borderRadius={10}
-            src={animotoImg}
-            alt="Animoto.com"
+            src={lystImg}
+            alt="lyst.com"
           />
-          <Heading mt={4} fontSize={"22px"}>
-            Animoto - Clone
+          <Heading mt={4} fontSize={"22px"} className="project-title">
+            Bluefly - Clone{" "}
           </Heading>
           <Text
             fontSize={["14px", "14px", "19px", "17px"]}
@@ -215,28 +227,29 @@ const Projects = (props) => {
             w="99%"
             mt={2}
             textAlign={"left"}
+            className="project-description"
           >
-            This website is a clone of "Animoto.com" where user can edit and
-            make new videos this website has lots of templates to make different
-            videos. In this team project I created navbar, footer part and In
-            the create option. I have made 9 pages.
+            This website is a clone of "Bluefly.com". This is e-commerce website that offers its customer to purchase the branded
+            product
+            at discounted price
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["14px", "14px", "19px", "17px"]}
           >
-            <b> Group Project: </b> 5 Collaborators | <b>Duration: </b> 05 Days
+             <b> Group Project: </b> 3 Collaborators | <b>Duration: </b> 05 Days
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["13px", "13px", "16px", "15px"]}
+            className="project-tech-stack"
           >
             <span style={{ color: "#fe9119", fontSize: "16px" }}>
               TECH STACK:{" "}
             </span>
-            HTML | CSS | JAVASCRIPT | JSON SERVER
+            HTML | CSS | JAVASCRIPT 
           </Text>
           <Box
             w={"80%"}
@@ -249,31 +262,31 @@ const Projects = (props) => {
             className="ProjectIcon"
           >
             <a
-              href="https://github.com/rohan209547mourya/deeply-tub-2367"
+            className="project-github-link"
+              href="https://github.com/Rohit27698/Team_bluefly"
               target="_blank"
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a
-              href="https://bright-sopapillas-48eab1.netlify.app/html/business"
-              target="_blank"
-            >
+            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
         </Box>
 
         {/* =============== Coschedule - Clone Projects ================ */}
-        <Box data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
+        <Box
+          className="project-card"
+          data-aos="zoom-in" borderRadius={10} p={4} style={theme1}>
           <Image
             border={"2px solid #fe9119"}
             w={"100%"}
             borderRadius={10}
-            src={coscheduleImg}
-            alt="coschedule.com"
+            src={lystImg}
+            alt="lyst.com"
           />
-          <Heading mt={4} fontSize={"22px"}>
-            Coschedule - Clone
+          <Heading mt={4} fontSize={"22px"} className="project-title">
+            Bluefly - Clone{" "}
           </Heading>
           <Text
             fontSize={["14px", "14px", "19px", "17px"]}
@@ -281,29 +294,29 @@ const Projects = (props) => {
             w="99%"
             mt={2}
             textAlign={"left"}
+            className="project-description"
           >
-            This website is a clone of "coschedule.com", CoSchedule Marketing
-            Suite is a family of agile marketing products that helps you
-            coordinate your process, projects, and teams. In this team project I
-            created navbar, Home page, footer part and Headline page and Build
-            Your Case For CoSchedule page.
+            This website is a clone of "Bluefly.com". This is e-commerce website that offers its customer to purchase the branded
+            product
+            at discounted price
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["14px", "14px", "19px", "17px"]}
           >
-            <b> Group Project: </b> 4 Collaborators | <b>Duration: </b> 05 Days
+             <b> Group Project: </b> 3 Collaborators | <b>Duration: </b> 05 Days
           </Text>
           <Text
             mt={2}
             textAlign={"left"}
             fontSize={["13px", "13px", "16px", "15px"]}
+            className="project-tech-stack"
           >
             <span style={{ color: "#fe9119", fontSize: "16px" }}>
               TECH STACK:{" "}
             </span>
-            HTML | CSS | JAVASCRIPT
+            HTML | CSS | JAVASCRIPT 
           </Text>
           <Box
             w={"80%"}
@@ -316,21 +329,19 @@ const Projects = (props) => {
             className="ProjectIcon"
           >
             <a
-              href="https://github.com/Abhishek07788/CoShedule-Website-Project-"
+            className="project-github-link"
+              href="https://github.com/Rohit27698/Team_bluefly"
               target="_blank"
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a
-              href="https://bejewelled-lebkuchen-8a5107.netlify.app/"
-              target="_blank"
-            >
+            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
         </Box>
       </SimpleGrid>
-      <GitHub theme1={theme1}/>
+      <GitHub theme1={theme1} />
     </div>
   );
 };
