@@ -225,7 +225,7 @@ const Contact = (props) => {
                 size="md"
                 required
                 name="name"
-                maxlength="40" 
+                // maxlength="40" 
               />
               <Input
                 type={"email"}
@@ -247,8 +247,8 @@ const Contact = (props) => {
                 size="md"
                 required
                 name="number"
-                minlength="10"
-                maxlength="10"  
+                // minlength="10"
+                // maxlength="10"  
                 // data-aos="fade-down"
               />
               <Textarea

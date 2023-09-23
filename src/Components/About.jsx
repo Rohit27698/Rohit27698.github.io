@@ -42,7 +42,7 @@ const About = (props) => {
 
   return (
     <div ref={aboutScroll}  style={theme}
-    id="about" class="about section">
+    id="about" className="about section">
       <Heading fontSize={40} color={"#fe9119"}>
         About <span style={theme}>Me</span>
       </Heading>

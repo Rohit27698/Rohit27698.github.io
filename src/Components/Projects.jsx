@@ -132,7 +132,7 @@ const Projects = (props) => {
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
+            <a href="https://blueflyclone.netlify.app/" target="_blank" className="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
@@ -200,7 +200,7 @@ const Projects = (props) => {
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
+            <a href="https://blueflyclone.netlify.app/" target="_blank" className="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
@@ -268,7 +268,7 @@ const Projects = (props) => {
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
+            <a href="https://blueflyclone.netlify.app/" target="_blank" className="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>
@@ -335,7 +335,7 @@ const Projects = (props) => {
             >
               <BsGithub className="gitEye" style={{ marginTop: "3" }} />
             </a>
-            <a href="https://blueflyclone.netlify.app/" target="_blank" class="project-deployed-link">
+            <a href="https://blueflyclone.netlify.app/" target="_blank" className="project-deployed-link">
               <HiEye mt={-1.5} className="gitEye" />
             </a>
           </Box>

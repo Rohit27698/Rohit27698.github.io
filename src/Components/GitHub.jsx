@@ -6,7 +6,7 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 const GitHub = ({ theme1 }) => {
   return (
     <div >
-      <div class="react-activity-calendar" >
+      <div className="react-activity-calendar" >
       <Heading mb={6} mt="8%"  >
           My GitHub <span style={{ color: "#fe9119" }}>Calendar</span>
         </Heading>

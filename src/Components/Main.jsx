@@ -136,7 +136,7 @@ const Main = () => {
               // // }
               href="#home"
               id="nave"
-              class="nav-link home"
+              className="nav-link home"
             >
               HOME
             </a>
@@ -144,7 +144,7 @@ const Main = () => {
               display={["none", "none", "block", "block"]}
               onClick={executeAbout}
               id="nave"
-              class="nav-link about"
+              className="nav-link about"
             >
               ABOUT
             </Text>
@@ -153,7 +153,7 @@ const Main = () => {
               w={105}
               onClick={executeProject}
               id="nave"
-              class="nav-link projects"
+              className="nav-link projects"
 
             >
               PROJECT
@@ -163,7 +163,7 @@ const Main = () => {
               w={105}
               onClick={executeSkill}
               id="nave"
-              class="nav-link skills"
+              className="nav-link skills"
             >
               SKILLS
             </Text>
@@ -171,7 +171,7 @@ const Main = () => {
               display={["none", "none", "block", "block"]}
               onClick={executeContact}
               id="nave"
-              class="nav-link contact"
+              className="nav-link contact"
             >
               CONTACT
             </Text>
